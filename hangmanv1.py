@@ -7,16 +7,18 @@ print('welcome to my hangman game\n')
 
 lives = 10
 
-while lives > 0:
-	x=random.randint(0,len(debugwordlist))
-	word = debugwordlist[x]
-	dashes=''
-	for i in word
-		dashes.append('_ ')
-	print('the word you have to guess looks like this:',dashes)
-	print('DEBUG: the word is actually', word)
+
+x=random.randint(0,len(debugwordlist))
+word = debugwordlist[x]
+dashes=[]
+for i in word:
+	dashes.append('_ ')
+print('the word you have to guess looks like this:',dashes)
+print('DEBUG: the word is actually', word)
+
+while lives > 0 :
 	print('you have', lives, ' guesses left')
-	letter=input('guess a letter\n')
+	#letter=input('guess a letter\n')
 
 	lives = lives -1
 
